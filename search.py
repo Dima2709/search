@@ -2,7 +2,7 @@ def search (arg, arg1):
     with open(arg+'.txt', 'r') as d:
         s = d.read()
         s = s.split(' ')
-    b = [',', '.', '=', '-', '(', ')', '/', '_','—', '!','?','\n', ':','«','»']
+    b = [',', '.', '=', '-', '(', ')', '/', '_','—', '!','?','\n', ':','«','»',';',"''"]
     for i in range(len(s)):
         for j in s[i]:
             if j in b:
